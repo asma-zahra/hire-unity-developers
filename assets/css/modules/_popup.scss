@@ -1,0 +1,112 @@
+/* Overlay Styles */
+
+.overlay {
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 99101;
+}
+
+
+/* Popup */
+
+.popup {
+    // background: $base-white-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    // bottom: 0;
+    z-index: 99101;
+    height: 100vh;
+    overflow: auto;
+    /* Popup Body */
+    &_wrapper {
+        position: relative;
+        // padding   : 4em;
+        height: 100%;
+        text-align: center;
+        padding: 50px 0;
+    }
+    &_body {
+        width: 90%;
+        max-width: 1024px;
+        @include box-shadow(0, 0, 30px, rgba(0, 0, 0, 0.1));
+        margin: 0 auto;
+        position: relative;
+        background: $base-white-color;
+        padding: 2rem;
+        h3 {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+        .featured_popup_image {
+            max-width: 550px;
+            display: inline-block;
+        }
+        /* .devresume {
+            max-height: 700px;
+            overflow: scroll;
+        } */
+    }
+    &_close {
+        position: absolute;
+        top: -0.5em;
+        right: -0.5em;
+        width: 40px;
+        height: 40px;
+        @extend .middle_align;
+        background: $website-brand-color;
+        border: solid 2px $base-white-color;
+        color: $base-white-color;
+        cursor: pointer;
+        @include border-radius(50px);
+        outline: none;
+    }
+    // popup-inner
+    form .marketing-field .lp-form-field label {
+        color: #000!important;
+        font-weight: 500 !important;
+    }
+    #vecrm-form form .marketing-field .lp-form-field input,
+    #vecrm-form form .marketing-field .lp-form-field select,
+    #vecrm-form form .marketing-field .lp-form-field textarea {
+        border: solid 1px #000!important;
+        font-size: 16px;
+        padding: 10px 15px;
+        color: #BEBEBE;
+        background: $base-white-color;
+        border-radius: 4px;
+        font-weight: 400;
+        font-family: $base-font-family !important;
+    }
+    p {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+// popup
+// popup
+@media (max-width: 1199.98px) {
+    .popup {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .popup_body {
+        width: 90%;
+        padding-top: 2rem;
+    }
+    .popup_body .featured_popup_image {
+        max-width: 100%;
+    }
+}

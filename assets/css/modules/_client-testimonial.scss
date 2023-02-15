@@ -1,0 +1,185 @@
+.client-section {
+    padding-top: 100px;
+    .container{
+        max-width:900px;
+        margin:0 auto;
+        padding-left:0;
+        padding-right: 0;
+    }
+    .item{
+        margin: 0 auto;
+        max-width: 900px;
+        background: url('assets/images/resource_bg.png');
+        background-repeat: no-repeat;
+        margin-top: 200px;
+        max-width: 868px;
+        width: 100%;
+        height: 340px;
+     .slider_align{
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+     }      
+    .client_img{
+        position: absolute;
+        bottom: 0;
+        overflow: visible;
+    }
+    }
+    .owl-carousel {
+        .owl-nav {
+            button {
+                &.owl-prev,
+                &.owl-next {
+                    width: 100px;
+                    height: 100px;
+                    background: $primary-color;
+                    @extend .middle_align;
+                    color: $base-white-color;
+                    font-size: 38px;
+                }
+                &.owl-prev{
+                    position: absolute;
+                    left: calc(0px  - 9%);
+                    bottom: 20%;
+                }
+                &.owl-next{
+                    position: absolute;
+                    right: calc(0px  - 9%);
+                    bottom: 20%;
+                }
+            }
+        }
+    }
+
+    article {
+        padding: 52px 58px 52px 0;
+        p {
+            font-weight: 500;
+            font-size: 24px;
+            color: $base-white-color;
+            max-width: 444px;
+            margin: 24px 0;
+        }
+
+        .client-name {
+            font-size: 20px;
+            font-weight: 700;
+            color: $base-font-color2;
+            margin-bottom: 6px;
+        }
+
+        .client-address {
+            font-weight: 500;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+   
+    }
+
+    .owl-dots {
+        margin-top: 100px;
+        text-align: center;
+
+        button.owl-dot {
+            width: 8px;
+            height: 8px;
+            background: $base-fussia-pink-color;
+            @include border-radius(50rem);
+            margin: 10px;
+        }
+
+        button.owl-dot.active {
+            background: $base-fussia-pink-color;
+            // box-shadow: 0px 0px 0px 8px #2e4040;
+            width: 14px;
+            height: 14px;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 8px;
+                height: 8px;
+                background: $base-fussia-pink-color;
+                border: 4px solid $base-fussia-pink-color;
+                filter: blur(10px);
+                display: inline-block;
+                top: 50%;
+                left: 50%;
+                z-index: -1;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .owl-carousel {
+            .owl-nav {
+                button {
+                    &.owl-prev,
+                    &.owl-next {
+                        width: 70px;
+                        height: 70px;
+                    }
+                    &.owl-prev{
+                        left: calc(0px  - 6%);
+                    }
+                    &.owl-next {
+                        right: calc(0px  - 6%);
+                    }
+                }
+            }
+        }
+}
+
+    @media (max-width: 991px) {
+        padding: 50px 15px;
+        article {
+            padding: 0;
+            padding-top: 20px;
+            p{
+                font-size: 18px;
+            }
+        }
+        .item{
+            .flex-4{
+                flex: 0 0 auto;
+                width: 100%;
+                margin: 0 auto;
+            }
+    
+            .flex-8{
+                flex: 0 0 auto;
+                width: 100%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .client_img{
+                display: none;
+            }
+        }
+        .container{
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        .owl-carousel {
+            .owl-nav {
+                button {
+                    &.owl-prev,
+                    &.owl-next {
+                     display: none;
+                    }
+                }}
+    }
+    .owl-dots {
+        margin-top: 50px;
+    }
+    }
+
+  
+
+}
+

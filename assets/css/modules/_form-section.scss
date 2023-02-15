@@ -1,0 +1,54 @@
+.get_trail_section {
+    padding: 100px 0px 100px 0;
+    background: url('assets/images/Form_bg.png');
+    .get_started_left{
+        h4{
+            font-weight: 400;
+        }
+        .form-points{
+            display: flex;
+            ul{
+                li{
+                    list-style: none;
+                    display: flex;
+                    span{
+                        align-self: center;
+                        margin-left: 23px;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    .get_started_form {
+        background-image: radial-gradient(circle at 100% 100%, transparent 5px, #ff00f5 5px, #ff00f5 10px, transparent 10px), linear-gradient(to right, #ff00f5, #1b204a), radial-gradient(circle at 0% 100%, transparent 5px, #1b204a 5px, #1b204a 10px, transparent 10px), linear-gradient(to bottom, #1b204a, #1b204a), radial-gradient(circle at 0% 0%, transparent 5px, #1b204a 5px, #1b204a 10px, transparent 10px), linear-gradient(to left, #1b204a, #ff00f5), radial-gradient(circle at 100% 0%, transparent 5px, #ff00f5 5px, #ff00f5 10px, transparent 10px), linear-gradient(to top, #ff00f5, #ff00f5);
+        background-size: 10px 10px, calc(100% - 20px) 5px, 10px 10px, 5px calc(100% - 20px);
+        background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+        background-repeat: no-repeat;
+        padding: 80px 50px;
+        max-width: 537px;
+        margin-left: auto;
+
+    }
+
+    @media (max-width: 991.98px) {
+        .flex-6 {
+            flex: 0 0 100%;
+            width: 100%;
+        }
+        .get_started_form {
+            margin: 0 auto;
+        }
+        padding: 50px 0px 50px 0;
+        .get_started_left {
+            .form-points{
+                justify-content: center;
+            }
+
+            h2, h4 {
+                text-align: center;
+            }
+        }
+    }
+}

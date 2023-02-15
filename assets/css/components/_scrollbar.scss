@@ -1,0 +1,17 @@
+::-webkit-scrollbar {
+    width: 5px;
+    background: $base-font-color2;
+}
+::-webkit-scrollbar:horizontal {
+    height: 5px;
+}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track:horizontal {
+    box-shadow: none
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:horizontal{
+    background-color: $base-font-color2;
+    outline: none;
+}

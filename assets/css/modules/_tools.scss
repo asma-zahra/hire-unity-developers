@@ -1,0 +1,153 @@
+.tool-bg {
+    padding: 125px 0 0 0;
+    background: url('assets/images/Tools_bg.png');
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    h4 {
+        margin-bottom: 100px;
+    }
+
+    img {
+        margin: 0 auto;
+    }
+
+
+    .circlebox {
+        width: 1012px;
+        height: 1012px;
+        border-radius: 100%;
+        border:  2px solid rgba(185,  31,  239,  0.37);
+        position: relative;
+        margin: 100px auto -606px auto;
+        animation-name:  spin;
+        animation-duration:  40000ms;
+        animation-iteration-count:  infinite;
+        animation-timing-function:  linear;
+    }
+    .enable-animation .marquee__content  {
+        animation:  50s linear infinite scroll;
+        animation-delay:  2s;
+    }
+    .enable-animation .marquee--pos-absolute .marquee__content:last-child  {
+        animation-name:  scroll-abs;
+    }
+
+    .marquee--hover-pause:hover .marquee__content  {
+        animation-play-state:  paused;
+    }
+    .marquee--fit-content  {
+        max-width:  fit-content;
+    }
+    .marquee--pos-absolute .marquee__content:last-child  {
+        position:  absolute;
+        top:  0;
+        left:  0;
+    }
+    .enable-animation .marquee--pos-absolute .marquee__content:last-child  {
+        animation-name:  scroll-abs;
+    }
+    @keyframes scroll-abs  {
+        from  {
+        transform:  translateX(calc(100% + var(--gap)));
+    }
+    to  {
+        transform:  translateX(0);
+    }
+    }
+    .marquee__content li  {
+        display:  flex;
+        align-items:  center;
+        padding:  10px 26px;
+    }
+    .marquee__content li img  {
+        max-width:  129px;
+        max-height:  100px;
+        width:  100%;
+        height:  100%;
+        object-fit:  contain;
+    }
+    .marquee__content>*  {
+        flex:  0 0 auto;
+        color:  #232039;
+        font-size:  24px;
+    }
+
+    img.toolsimage  {
+        width:  124px;
+        height:  124px;
+        position:  absolute;
+        border-radius:  100%;
+        animation-name:  spin1;
+        animation-duration:  40000ms;
+        animation-iteration-count:  infinite;
+        animation-timing-function:  linear;
+    }
+
+    @keyframes spin1  {
+        from  {
+        transform: rotate(0deg);
+    }
+    to  {
+        transform: rotate(-360deg);
+    }
+    }
+    .t1  {
+        bottom:  55%;
+        left:  -5%;
+        transform:  translate(0px,  -50%);
+    }
+    .t2  {
+        top: 7%;
+        left:  10%;
+        transform:  translate(0px,  -50%);
+    }
+    .t3  {
+        left:  32%;
+        top:  -4%;
+    }
+    .t4  {
+        top:  -4%;
+        right:  28%;
+    }
+    .t5  {
+        top:  11%;
+        right:  6%;
+        transform:  translate(0px,  -50%);
+    }
+    .t6  {
+        top:  36%;
+        right:  -6%;
+        transform:  translate(0px,  -50%);
+    }
+    .t7  {
+        bottom: 6%;
+        right:  12%;
+        transform:  translate(0px,  -50%);
+    }
+    .t8  {
+        bottom:  26%;
+        right:  -4%;
+        transform:  translate(0px,  -50%);
+    }
+    .t9  {
+        right:  34%;
+        bottom:  -5%;
+    }
+    .t10  {
+        bottom: -4%;
+        left:  27%;
+    }
+    .t11  {
+        bottom: 11%;
+        left: 6%;
+        transform:  translate(0px,  -50%);
+    }
+    .t12  {
+        bottom:  30%;
+        left:  -5%;
+        transform:  translate(0px,  -50%);
+    }
+}

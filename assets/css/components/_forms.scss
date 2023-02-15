@@ -1,0 +1,92 @@
+#vecrm-form form {
+    text-align: left;
+}
+
+form .marketing-field .lp-form-field label {
+    color: $base-white-color !important;
+    font-size: 18px !important;
+    padding-bottom: 0 !important;
+    opacity: 1 !important;
+    font-weight: 400 !important;
+    font-family: $base-font-family !important;
+}
+
+#vecrm-form form .marketing-field .lp-form-field input,
+#vecrm-form form .marketing-field .lp-form-field select,
+#vecrm-form form .marketing-field .lp-form-field textarea {
+    border: solid 1px $base-font-color !important;
+    font-size: 16px;
+    padding: 10px 15px;
+    color: #BEBEBE;
+    background: $base-font-color;
+    border-radius: 4px;
+    font-weight: 400;
+    font-family: $base-font-family !important;
+}
+
+#vecrm-form form .marketing-field .lp-form-field select:invalid {
+    color: #a7a7a7 !important;
+}
+
+#vecrm-form form .marketing-field .lp-form-field select {
+    color: #a7a7a7 !important;
+}
+
+#vecrm-form form .columnContainer [data-editorblocktype="Field-phone"],
+#vecrm-form form .columnContainer [data-editorblocktype="Field-lookup"] {
+    margin-top: 10px;
+}
+
+/* #vecrm-form form .marketing-field .lp-form-field {
+    margin-bottom: 5px;
+} */
+
+form .marketing-field .lp-form-field input:focus,
+form .marketing-field .lp-form-field select:focus,
+form .marketing-field .lp-form-field textarea:focus {
+    //box-shadow: 0 0 0 0.25rem #eeeefd !important;
+    outline: none;
+}
+
+form .marketing-field .lp-form-field input:focus-visible,
+form .marketing-field .lp-form-field select:focus-visible,
+form .marketing-field .lp-form-field textarea:focus-visible {
+    outline: none !important;
+}
+
+form .marketing-field .lp-form-field input,
+form .marketing-field .lp-form-field select,
+form .marketing-field .lp-form-field textarea {
+    margin-top: 0;
+}
+
+#vecrm-form form .lp-form-button {
+    background: radial-gradient(92.09% 85.42% at 86.3% 87.5%, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0) 86.18%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    , radial-gradient(65.28% 65.28% at 26.39% 20.83%, rgba(255, 255, 255, 0.413) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    , #46CFCF !important;
+    box-shadow: 4px 38px 62px rgba(0, 0, 0, 0.5);
+    border-radius: 109px!important;
+    color: $base-font-color !important;
+    border: none !important;
+    font-weight: 700 !important;
+    font-size: 22px !important;
+    line-height: 28px;
+    padding: 18px 46px !important;
+    height: 64px;
+    transition: all .5s;
+    cursor: pointer;
+    font-family: $base-font-family !important;
+}
+
+.lp-form-button:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 991px) {
+    .lp-form-button {
+        padding: 20px 15px !important;
+        font-size: 16px !important;
+    }
+}

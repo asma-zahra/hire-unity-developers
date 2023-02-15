@@ -1,0 +1,212 @@
+.serbg {
+    position: relative;
+    &:after {
+        content: '';
+        background: url(../images/serbg.svg) no-repeat right center;
+        position: absolute;
+        right: 0;
+        top: 0;
+        max-width: 1903px;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+    }
+}
+
+.maincontainer {
+    position: relative;
+}
+
+.maincontainer .experts .container_scroll {
+    max-width: 960px;
+    margin: 0 auto;
+    .space-holder {
+        position: relative;
+        width: 100%;
+    }
+    .sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 150px;
+        height: 700px;
+        width: 100%;
+    }
+    .ser_head {
+        position: relative;
+        padding-bottom: 48px;
+    }
+    .progress-container {
+        width: 100%;
+        height: 4px;
+        background: #0B0B0B;
+        margin-top: 40px;
+    }
+    .progress-bar {
+        height: 4px;
+        background: $website-brand-color;
+        width: 0%;
+    }
+    .horizontal {
+        will-change: transform;
+        -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    }
+    section {
+        padding: 0;
+    }
+    .cards {
+        position: relative;
+        @include flexbox;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .item {
+        position: relative;
+        max-width: 1080px;
+        margin-right: 100px;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        width: 100%;
+    }
+    .white-box {
+        padding: 86px 0 80px 60px;
+    }
+    .itemcontent {
+        width: 46%;
+        color: rgba(51, 51, 51, 0.8);
+    }
+    .itemvideo {
+        margin-left: 60px;
+        background: url(../images/macbook.png) no-repeat;
+        width: 419px;
+        height: 293px;
+        position: relative;
+    }
+    .video-frame {
+        position: absolute;
+        top: 18px;
+        right: 0;
+        max-width: 351px;
+        max-height: 228px;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+    .video-frame video {
+        width: 100%;
+        height: 274px;
+    }
+}
+
+@media (max-width: 1499.98px) {
+    .maincontainer {
+        padding-bottom: 0px;
+    }
+    .maincontainer .experts .sticky {
+        top: 100px !important;
+        height: 550px !important;
+    }
+    .maincontainer .experts .horizontal {
+        top: 0;
+    }
+    .maincontainer .experts .horizontal .item {
+        max-width: 788px;
+        margin-right: 80px;
+        width: 100%;
+    }
+    .maincontainer .experts .container_scroll .white-box {
+        padding: 20px 0 10px 40px;
+    }
+    .maincontainer .experts .container_scroll .progress-container {
+        margin-top: 27px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .maincontainer .experts .space-holder,
+    .maincontainer .experts .sticky,
+    .maincontainer .experts .horizontal,
+    .maincontainer .experts .horizontal .cards,
+    .maincontainer .experts .horizontal .item {
+        height: auto !important;
+        top: 0;
+    }
+    .maincontainer .experts .horizontal .cards {
+        display: block;
+        padding: 0 15px;
+    }
+    .maincontainer .experts .horizontal {
+        position: relative;
+    }
+    .maincontainer .experts .horizontal .item {
+        max-width: 60vw;
+        margin: 50px auto 0;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .maincontainer .experts .horizontal .cards {
+        height: auto;
+        display: block;
+    }
+    .maincontainer .experts .sticky {
+        position: static;
+        top: 0;
+        height: auto;
+    }
+    .maincontainer .experts .horizontal {
+        position: static;
+        height: auto;
+        top: 0;
+    }
+    .maincontainer .experts .horizontal .item {
+        max-width: 70.31vw;
+        height: 400px;
+    }
+    .maincontainer .experts .horizontal .item {
+        margin: 0 60px 10px;
+        padding-right: 20px;
+    }
+    .ser_head {
+        padding-bottom: 0;
+        max-width: 870px;
+        margin: 0 auto 30px;
+    }
+    .maincontainer .service_block {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .ser_video {
+        display: none;
+    }
+    .maincontainer .experts .horizontal .item {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 767px) {
+    .maincontainer .experts .horizontal .item {
+        max-width: 298px;
+    }
+    .maincontainer .experts .container_scroll .ser_head {
+        padding-bottom: 0px;
+    }
+    .white-box::after {
+        top: 11px;
+        left: 45px;
+    }
+}
+
+@media (max-width: 320px) {
+    .maincontainer .experts .horizontal .item {
+        max-width: 244px;
+    }
+}

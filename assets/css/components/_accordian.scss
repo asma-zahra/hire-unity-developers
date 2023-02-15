@@ -1,0 +1,60 @@
+.accordian {
+    &_block {
+        @include flexbox();
+        @include align-items(center);
+        padding   : 20px 30px;
+        background: $base-font-color;
+        @include border-radius(10px);
+        color : $base-white-color;
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        &.active {
+            .accordian_icon {
+                .icons.development {
+                    background-position: -269px -349px; 
+                }
+                .icons.design {
+                    background-position: -131px -349px; 
+                }
+                .icons.content {
+                    background-position: -201px -349px; 
+                }
+                .icons.testing {
+                    background-position: -60px -349px; 
+                }
+                .icons.cro {
+                    background-position: -3px -349px; 
+                }
+            }
+            .accordian_text {
+                .icons.down-arrow {
+                    background-position: -342px -315px;
+                }
+            }
+        }
+    }
+
+    &_text {
+        width       : calc(100% - 50px);
+        padding-left: 30px;
+
+        h4 {
+            margin-bottom: 0;
+            @include flexbox();
+            @include align-items(center);
+            @include justify-content(space-between);
+            margin-bottom: 0;
+        }
+
+        p {
+            display   : none;
+            margin-top: 15px;
+            line-height: 1.5;
+            padding-right: 50px;
+        }
+    }
+}

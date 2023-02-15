@@ -1,0 +1,54 @@
+.icon-skype,
+.icon-envelope,
+.icon-phone {
+    //background: url('assets/images/sprite-icon.png') no-repeat;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.icon-skype {
+    background-image: url('assets/images/skype.svg');
+    background-position: 1px 1px;
+}
+
+.icon-envelope {
+    background-position: 1px 0;
+    background-image: url('assets/images/email.svg');
+}
+
+.icon-phone {
+    background-position: 1px 1px;
+    background-image: url('assets/images/call.svg');
+}
+
+.icons {
+    // background: url('assets/images/sprite-icon.png') no-repeat;
+    width: 40px;
+    height: 40px;
+    background-position: 0 0;
+    display: inline-block;
+    &.quick-hiring-icon,
+    &.project-stability-icon,
+    &.in-house-team-icon,
+    &.western-firm-experience-icon {
+        width: 54px;
+        height: 54px;
+        background-position: -7px -55px;
+    }
+    &.project-stability-icon {
+        background-position: -80px -55px;
+    }
+    &.in-house-team-icon {
+        background-position: -152px -55px;
+    }
+    &.western-firm-experience-icon {
+        background-position: -225px -55px;
+    }
+    &.left-arrow-icon {
+        width: 65px;
+        height: 40px;
+        background-position: -8px -129px;
+    }
+}

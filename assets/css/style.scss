@@ -1,0 +1,25 @@
+//Partials css
+@import 'partials/global';
+//Component css
+@import 'components/mixins';
+@import 'components/flex-grid';
+@import 'components/icons';
+@import 'components/dropdown';
+@import 'components/forms';
+@import 'components/buttons';
+@import 'components/scrollbar';
+@import 'components/accordian';
+// Owl Carousel
+@import 'owl-carousal/owl.carousel';
+@import 'modules/slickslider';
+//Modules css
+@import 'modules/layout';
+@import 'modules/header';
+@import 'modules/banner';
+@import 'modules/services';
+@import 'modules/tools';
+@import 'modules/form-section';
+@import 'modules/resource-section';
+@import 'modules/client-testimonial';
+@import 'modules/popup';
+@import 'modules/footer';

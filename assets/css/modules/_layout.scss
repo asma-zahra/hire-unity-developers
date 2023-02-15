@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+html {
+    font-size: 20px;
+    // overflow-x: hidden;
+
+    @media (max-width: 1600px) {
+        font-size: 18px;
+    }
+
+    @media (max-width: 1199.98px) {
+        font-size: 16px;
+    }
+}
+
+body {
+    font-size: $base-font-size;
+    font-family: $base-font-family;
+    line-height: $base-line-height;
+    color: $base-font-color;
+    font-weight: $base-font-weight;
+    background-color: $website-brand-color;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: $base-white-color;
+ 
+    @media screen and (max-width:1400px) {
+        font-size: 24px;
+    }
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 24px;
+    color: $base-white-color;
+    @media screen and (max-width: 1400px) {
+        font-size: 18px;
+    }
+
+}
+
+.container {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+}
+.container-fluid {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: $base-font-color;
+}
+
+.mb-100 {
+    margin-bottom: 80px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.overflow_hidden {
+    overflow: hidden;
+}
+
+.transition {
+    @include transition(all, 0.3s);
+}
+
+.middle_align {
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+}
+
+.text_center,
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.shadow {
+    @include box-shadow(0, 30px, 60px, rgba(0, 0, 0, 0.08));
+}
+
+.position-relative {
+    position: relative;
+}
+
+.sec100 {
+    padding: 100px 0;
+}
+
+@media screen and (min-width:991px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+    .sec100 {
+        min-height: 100vh;
+    }
+}
+
+@media screen and (min-width:1600px) {
+    .container {
+        max-width: 1470px;
+    }
+}
